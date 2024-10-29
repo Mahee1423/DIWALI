@@ -1,0 +1,42 @@
+<html>
+    <head><script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+        <body>
+            <h1> HAPPY DIWALI</h1>
+            <div class="diwali-content">
+                </div>
+            <div class="gallery">
+                <img src="https://i.pinimg.com/736x/47/7d/78/477d7832eaf0f350f0ba3a4ce9bcc845.jpg" width="250" alt="">
+                <img src="https://t4.ftcdn.net/jpg/01/75/02/87/360_F_175028792_eqInS4HzWt8r1RUXXW8nnOWJKprQL5Lp.jpg" width="300" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSCIbRei3KwyTqxaeULnmQlGVd3AcauQaszQ&s" width="250" alt="">
+                <img src="https://t4.ftcdn.net/jpg/04/60/94/69/360_F_460946906_8c53DWBBrfwbqIPELK8sCrEnRXPT4CbF.jpg" width="280" height="240" alt="">
+                <img src="https://cdn.pixabay.com/photo/2023/10/20/11/14/diya-8329247_640.jpg" width="300" height="240" alt="">
+            </div>
+
+        </body>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+  <script>
+    function launchConfetti() {
+    const duration = 7 * 1000; // 10 seconds
+    const end = Date.now() + duration;
+    const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+    (function frame() {
+        confetti({
+            particleCount: 6, // Reduced number of particles
+            startVelocity: 80,
+            spread: 450,
+            ticks: 190,
+            origin: { x: 0.5, y: 0.5 }, // Start from top center
+            colors: colors,
+        });
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
+window.onload = function() {
+    launchConfetti();
+}
+</script>
+    </head>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            .container{
+                display: flex;
+                align-items:center;
+                justify-content:space-between;
+            }
+        
+            
+            .login-container{
+                background-color:orange;
+                padding:4%;
+                width:40%;
+            }
+            .form-field label{
+                font-size:1.4rem;
+                font-weight:bold;
+
+            }
+            .form-field input{
+                padding:20px;
+                width:80%;
+                margin:10px 0px;
+
+            }
+            @media(max-width:430px){
+                .container{
+                    flex-direction:column;
+                }
+                .login-container{
+                    width:80%
+                }
+            }
+                 
+            
+        </style>
+        <body>
+            <div class="container">
+            <form action="diwali.html" class="login-container">
+                <h1>Login</h1>
+                <div class="form-field">
+                    <label for="">username</label><br>
+                    <input type="email" placeholder="enter emailID"
+                    name="email" required/>
+
+                </div>
+                <div class="form-field">
+                    <label for="">password</label><br>
+                    <input type="password" placeholder="enter password"
+                    name="password" required/>
+                
+                </div>
+                <div class="form-field">
+                    <label for=""></label> 
+                    
+                </div>
+                <button class="form-btn">Login</button>    
+              <p>
+                Dont have an account signup here
+            </form>
+            <img src="https://t4.ftcdn.net/jpg/05/26/92/37/360_F_526923714_gyHev7uIEAoIcSkql9bgaVNDO5cx3Ggn.jpg"alt="">
+            
+               
+            </div>
+        </body>
+    </head>
+</html>
